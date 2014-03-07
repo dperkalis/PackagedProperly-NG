@@ -3,9 +3,20 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('AddItemCtrl', ['$scope', function($scope) {
+        $scope.hello = function() {
+            alert('hi');
+        };
+        $scope.description = "";
+        $scope.itemDate = new Date();
+        $scope.amount = 0;
+        $scope.submitForm = function(isValid) {
+            alert('submitting form' + isValid);
+        };
+  }])
+  .controller('SearchItemCtrl', [function() {
 
   }])
-  .controller('MyCtrl2', [function() {
+    .controller('ListCtrl', [function() {
 
-  }]);
+    }]);

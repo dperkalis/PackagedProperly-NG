@@ -10,7 +10,8 @@ var ppApp = angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+        $routeProvider.when('/list', {templateUrl: 'partials/list.html', controller: 'ListCtrl'});
+  $routeProvider.when('/add', {templateUrl: 'partials/add.html', controller: 'AddItemCtrl'});
+  $routeProvider.when('/search', {templateUrl: 'partials/search.html', controller: 'SearchItemCtrl'});
+  $routeProvider.otherwise({redirectTo: '/list'});
 }]);
