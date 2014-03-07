@@ -1,14 +1,24 @@
 <form name="transactionFrm" ng-submit="submitForm(transactionFrm.$valid)" novalidate>
-    <label>Date:</label>
-    <input ng-model="itemDate" placeholder="date" required />
-    <p ng-show="transactionFrm.itemDate.$invalid && !transactionFrm.itemDate.$pristine" class="help-block">Date is required.</p>
-    <label>Description:</label>
-    <input ng-model="description" placeholder="description"/>
+    <div class="form-group">
+        <label>Date:</label>
+        <input ng-model="itemDate" placeholder="date" required/>
 
-    <label>Amount:</label>
-    <input ng-model="amount" required />
-    <p ng-show="transactionFrm.amount.$invalid && !transactionFrm.amount.$pristine" class="help-block">Amount is required.</p>
+        <p ng-show="transactionFrm.itemDate.$invalid && !transactionFrm.itemDate.$pristine" class="help-block">Date is
+            required.</p>
+    </div>
+    <div class="form-group">
+        <label>Description:</label>
+        <input ng-model="description" placeholder="description"/>
+    </div>
+    <div class="form-group">
+        <label>Amount:</label>
+        <input ng-model="amount" required/>
 
-    <button type="submit" ng-disabled="transactionFrm.$invalid">Submit</button>|<a href="#/list">Back</a>
-
+        <p ng-show="transactionFrm.amount.$invalid && !transactionFrm.amount.$pristine" class="help-block">Amount is
+            required.</p>
+    </div>
+    <div class="form-group" style="padding-top:5px">
+        <button type="submit" ng-disabled="transactionFrm.$invalid" class="btn btn-primary">Submit</button>
+        &nbsp;<a href="#/list" class="btn btn-primary">Back</a>
+    </div>
 </form>
