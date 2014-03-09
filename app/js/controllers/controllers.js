@@ -2,8 +2,8 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('AddItemCtrl', ['$scope', function($scope) {
+angular.module('ppApp.controllers', [])
+.controller('AddItemCtrl', ['$scope', function($scope) {
         $scope.hello = function() {
             alert('hi');
         };
@@ -11,10 +11,29 @@ angular.module('myApp.controllers', []).
         $scope.submitForm = function(isValid) {
             alert('submitting form' + isValid);
         };
-  }])
-  .controller('SearchItemCtrl', [function() {
+}])
+.controller('SearchItemCtrl', [function() {
 
-  }])
-    .controller('ListCtrl', [function() {
-
-    }]);
+}])
+.controller('SummaryCtrl', ['$scope', 'EntryService',
+    function($scope, EntryService) {
+        $scope.entries = [];
+        var promise = EntryService.getSummary();
+        promise.then(function(response) {
+            $scope.entries = response.data;
+        },
+        function(errorResponse) {
+            alert(errorResponse);
+        });
+}])
+.controller('JournalCtrl', ['$scope', 'EntryService',
+        function($scope, EntryService) {
+            $scope.journal = {};
+            var promise = EntryService.getJournalDetail();
+            promise.then(function(response) {
+                $scope.journal = response.data;
+            },
+            function(errorResponse) {
+                alert(errorResponse);
+            });
+        }]);
