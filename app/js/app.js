@@ -14,5 +14,6 @@ config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/journal', {templateUrl: 'partials/journal.html', controller: 'JournalCtrl'});
   $routeProvider.when('/add', {templateUrl: 'partials/add.html', controller: 'AddItemCtrl'});
   $routeProvider.when('/search', {templateUrl: 'partials/search.html', controller: 'SearchItemCtrl'});
-  $routeProvider.otherwise({redirectTo: '/summary'});
+        $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'LoginCtrl'});
+        $routeProvider.otherwise({redirectTo: '/summary'});
 }]);
