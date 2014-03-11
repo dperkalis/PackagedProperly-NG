@@ -1,0 +1,21 @@
+{
+    "journalID": 1,
+    "journalDate": "1/1/2013",
+    "entries": [
+        {
+            "entryID": 1,
+            "description": "description",
+            "amount": 15.0
+        },
+        {
+            "entryID": 2,
+            "description": "description",
+            "amount": 15.0
+        },
+        {
+            "entryID": 3,
+            "description": "description",
+            "amount": 15.0
+        }
+    ]
+}

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7b1d52e-0f59-45bb-8ee3-fa86e7e68c61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/parse-1.2.17.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/add.html" afterPath="$PROJECT_DIR$/app/partials/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/services/services.js" afterPath="$PROJECT_DIR$/app/js/services/services.js" />
+    <list default="true" id="e7b1d52e-0f59-45bb-8ee3-fa86e7e68c61" name="Default" comment="Added preliminary parse and facebook integration.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/data/entries.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/journal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/data/journal.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/data/summary.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PackagedProperly-NG.iws" />
@@ -35,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="52" selection-start="1294" selection-end="1335" vertical-scroll-proportion="0.60289854" vertical-offset="199" max-vertical-offset="1050">
+            <state line="40" column="49" selection-start="1295" selection-end="1333" vertical-scroll-proportion="0.60289854" vertical-offset="184" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
@@ -67,7 +65,7 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+            <state line="3" column="17" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
               <folding />
             </state>
           </provider>
@@ -85,7 +83,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/controllers/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1951" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1140">
+            <state line="59" column="0" selection-start="1955" selection-end="2006" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -445,19 +443,24 @@
       <created>1394337012686</created>
       <updated>1394337012686</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added preliminary parse and facebook integration.">
+      <created>1394508248186</created>
+      <updated>1394508248186</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="22" width="1400" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39949432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -466,7 +469,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -486,7 +488,9 @@
     </option>
     <MESSAGE value="Fixed controller &amp; service paths.&#10;" />
     <MESSAGE value="Added new pages.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new pages.&#10;" />
+    <MESSAGE value="Added preliminary parse and facebook integration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added preliminary parse and facebook integration." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -677,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+        <state line="3" column="17" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
           <folding />
         </state>
       </provider>
@@ -691,14 +695,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1951" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1140">
+        <state line="59" column="0" selection-start="1955" selection-end="2006" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="52" selection-start="1294" selection-end="1335" vertical-scroll-proportion="0.60289854" vertical-offset="199" max-vertical-offset="1050">
+        <state line="40" column="49" selection-start="1295" selection-end="1333" vertical-scroll-proportion="0.60289854" vertical-offset="184" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
