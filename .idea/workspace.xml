@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7b1d52e-0f59-45bb-8ee3-fa86e7e68c61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/services/StateService.js" />
-      <change type="DELETED" beforePath="C:\Users\dperkalis\Documents\GitHub\PackagedProperly-NG\app\partials\search.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/services/AuthService.js" afterPath="$PROJECT_DIR$/app/js/services/AuthService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/services/EntryService.js" afterPath="$PROJECT_DIR$/app/js/services/EntryService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers/MainCtrl.js" afterPath="$PROJECT_DIR$/app/js/controllers/MainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PackagedProperly-NG.iws" />
@@ -44,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="-5.423077" vertical-offset="114" max-vertical-offset="1275">
+            <state line="15" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="13.730769" vertical-offset="612" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -62,7 +56,7 @@
       <file leaf-file-name="AuthService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/services/AuthService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="0.6828753" vertical-offset="17" max-vertical-offset="561">
+            <state line="16" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.57505286" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -71,7 +65,7 @@
       <file leaf-file-name="StateService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/services/StateService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="90" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="1" column="17" selection-start="87" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -107,7 +101,7 @@
       <file leaf-file-name="MainCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/controllers/MainCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="12" column="41" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -211,6 +205,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PackagedProperly-NG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PackagedProperly-NG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,7 +365,11 @@
       <created>1394718794484</created>
       <updated>1394718794484</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added preliminary parse and facebook integration.">
+      <created>1394744214571</created>
+      <updated>1394744214571</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -366,7 +382,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20555556" sideWeight="0.67069894" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20555556" sideWeight="0.67069894" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39949432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -496,7 +512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services/StateService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="90" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="1" column="17" selection-start="87" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
@@ -510,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="-5.423077" vertical-offset="114" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
@@ -526,14 +535,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers/MainCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="12" column="41" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="13.730769" vertical-offset="612" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services/AuthService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="0.6828753" vertical-offset="17" max-vertical-offset="561">
+        <state line="16" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.57505286" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>

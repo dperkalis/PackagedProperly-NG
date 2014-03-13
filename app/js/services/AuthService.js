@@ -9,12 +9,11 @@ angular.module('ppApp.services')
                         deferred.resolve(user);
                     },
                     error: function (user, error) {
-                        deferred.resolve(error);
+                        deferred.reject(error);
                     }
                 });
 
                 return deferred.promise;
-
             },
             logout = function () {
                 Parse.User.logOut();
