@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en" ng-app="ppApp">
 <head>
-  <meta charset="utf-8">
-  <title>Packaged Properly</title>
-  <link rel="stylesheet" href="css/app.css"/>
+    <meta charset="utf-8">
+    <title>Packaged Properly</title>
+    <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
 </head>
@@ -19,51 +19,54 @@ Welcome
 <div ng-view></div>
 
 
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="lib/ui-bootstrap-tpls-0.10.0.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services/services.js"></script>
-  <script src="js/controllers/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="lib/parse-1.2.17.js"></script>
-  <script type="text/javascript">
-
-
-      window.fbAsyncInit = function () {
-          Parse.FacebookUtils.init({
-              appId: '606982002728460', // Facebook App ID
-              channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
-              status: true, // check login status
-              cookie: true, // enable cookies to allow Parse to access the session
-              xfbml: true  // parse XFBML
-          });
-
-          // Additional initialization code here
-      };
-
-      // Load the SDK asynchronously
-      (function (d) {
-          var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-          if (d.getElementById(id)) {
-              return;
-          }
-          js = d.createElement('script');
-          js.id = id;
-          js.async = true;
-          js.src = "//connect.facebook.net/en_US/all.js";
-          ref.parentNode.insertBefore(js, ref);
-      }(document));
-
-      Parse.initialize("OxXlG88dNvP7nr2RIBvHthzyMPIywbNI364wrfk4", "wKGAEdLbok1tYAJupkcwcOgiVP75DL5sTpHAVUOG");
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/ServiceModule.js"></script>
+<script src="js/services/AuthService.js"></script>
+<script src="js/services/EntryService.js"></script>
+<script src="js/controllers/ControllerModule.js"></script>
+<script src="js/controllers/MainCtrl.js"></script>
+<script src="js/controllers/AddItemCtrl.js"></script>
+<script src="js/controllers/JournalCtrl.js"></script>
+<script src="js/controllers/SummaryCtrl.js"></script>
+<script src="lib/parse-1.2.17.js"></script>
+<script type="text/javascript">
 
 
-  </script>
+    window.fbAsyncInit = function () {
+        Parse.FacebookUtils.init({
+            appId: '606982002728460', // Facebook App ID
+            channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+            status: true, // check login status
+            cookie: true, // enable cookies to allow Parse to access the session
+            xfbml: true  // parse XFBML
+        });
+
+        // Additional initialization code here
+    };
+
+    // Load the SDK asynchronously
+    (function (d) {
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement('script');
+        js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+    }(document));
+
+    Parse.initialize("OxXlG88dNvP7nr2RIBvHthzyMPIywbNI364wrfk4", "wKGAEdLbok1tYAJupkcwcOgiVP75DL5sTpHAVUOG");
+
+
+</script>
 </body>
 </html>

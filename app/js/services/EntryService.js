@@ -1,8 +1,4 @@
-'use strict';
-var appId = "OxXlG88dNvP7nr2RIBvHthzyMPIywbNI364wrfk4", apiKey = "9UsXZ8BZuIMSfzCAxWLBryxnmdbACeBdslCUiKzW";
-
-/* Services */
-angular.module('ppApp.services', [])
+angular.module('ppApp.services')
     .factory('EntryService', ['$http', '$q', function ($http, $q) {
 
         var baseUrl = "https://api.parse.com/1/classes/journalentries",
