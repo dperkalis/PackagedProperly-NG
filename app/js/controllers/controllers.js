@@ -3,6 +3,7 @@
 /* Controllers */
 
 angular.module('ppApp.controllers', [])
+
     .controller('AddItemCtrl', ['$scope', 'EntryService', function ($scope, EntryService) {
         $scope.formData = {};
 
@@ -39,33 +40,18 @@ angular.module('ppApp.controllers', [])
                     alert(errorResponse);
                 });
         }])
-    .controller('LoginCtrl', ['$scope', 'EntryService',
-        function ($scope, EntryService) {
-
-            $scope.login = function () {
-                Parse.FacebookUtils.logIn(null, {
-                    success: function (user) {
-                        if (!user.existed()) {
-                            alert("User signed up and logged in through Facebook!");
-                        } else {
-                            alert("User logged in through Facebook!");
-                        }
-                    },
-                    error: function (user, error) {
-                        alert("User cancelled the Facebook login or did not fully authorize.");
-                    }
-                });
-            };
-
-
-            $scope.loggedIn = FB.getLoginStatus();
-
-            $scope.journal = {};
-
-            EntryService.getJournalDetail().then(function (response) {
-                    $scope.journal = response.results;
+    .controller('MainCtrl', ['$scope', function ($scope) {
+        $scope.user = {};
+        $scope.login = function () {
+            Parse.FacebookUtils.logIn(null, {
+                success: function (user) {
+                    $scope.user.username = user.getUsername();
+                    $scope.user.authenticated = true;
+                    console.log('TODO - Save Cookie');
                 },
-                function (errorResponse) {
-                    alert(errorResponse);
-                });
-        }]);
+                error: function (user, error) {
+                    alert("User cancelled the Facebook login or did not fully authorize.");
+                }
+            });
+        };
+    }]);

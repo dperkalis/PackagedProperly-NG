@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
 </head>
-<body>
-  <ul class="menu">
+<body ng-controller="MainCtrl">
+<ul class="menu">
     <li><a href="#/add">add</a></li>
     <li><a href="#/search">search</a></li>
-      <li><a href="#/login">login</a></li>
-  </ul>
-
-  <div ng-view></div>
+    <li ng-hide="user.authenticated"><a href="#" ng-click="login()">Login</a></li>
+    <li ng-show="user.authenticated"><a href="#" ng-click="user.logOut()">Logout</a></li>
+</ul>
+Welcome
+<div ng-model="user.username"></div>
+<div ng-view></div>
 
 
 
