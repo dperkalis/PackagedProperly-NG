@@ -1,17 +1,22 @@
 'use strict';
 angular.module('ppApp')
-    .controller('MainCtrl', ['$scope', function ($scope) {
-        $scope.user = {};
+    .controller('MainCtrl', ['$scope', 'AuthService', function ($scope, AuthService) {
+        $scope.isLoggedin = false;
+        $scope.errorMsg = "";
+        $scope.currentUser = Parse.User.current();
         $scope.login = function () {
-            Parse.FacebookUtils.logIn(null, {
-                success: function (user) {
-                    $scope.user.username = user.getUsername();
-                    $scope.user.authenticated = true;
-                    console.log('TODO - Save Cookie');
-                },
-                error: function (user, error) {
-                    alert("User cancelled the Facebook login or did not fully authorize.");
-                }
+            AuthService.login().then(function (response) {
+                $scope.currentUser = Parse.User.current();
+                $scope.isLoggedin = true;
+            }, function (errorResponse) {
+                $scope.currentUser = Parse.User.current();
+                $scope.isLoggedin = false;
             });
+        };
+
+        $scope.logout = function () {
+            AuthService.logout();
+            $scope.isLoggedin = false;
+            $scope.currentUser = null;
         };
     }]);

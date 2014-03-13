@@ -1,6 +1,6 @@
 angular.module('ppApp.services')
     .factory('EntryService', ['$http', '$q', function ($http, $q) {
-
+        "use strict";
         var baseUrl = "https://api.parse.com/1/classes/journalentries",
             headers = {
                 "Content-Type": "application/json",
