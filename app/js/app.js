@@ -11,5 +11,6 @@ var ppApp = angular.module('ppApp', [
         $routeProvider.when('/summary', {templateUrl: 'partials/summary.html', controller: 'SummaryCtrl'});
         $routeProvider.when('/journal', {templateUrl: 'partials/journal.html', controller: 'JournalCtrl'});
         $routeProvider.when('/add', {templateUrl: 'partials/add.html', controller: 'AddItemCtrl'});
+        $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'LoginCtrl'});
         $routeProvider.otherwise({redirectTo: '/summary'});
     }]);

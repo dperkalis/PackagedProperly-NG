@@ -1,4 +1,13 @@
 Login
-<button ng-click="login()">Login</button>
 
-<div>Logged In Status: {{loggedIn}}</div>
+<form ng-submit="login()">
+    <input type="text" placeholder="username" ng-model="user.username" required/>
+    <input type="password" ng-model="user.password" required/>
+    <input type="submit" value="Login"/>
+</form>
+<form ng-submit="createAccount()">
+    <input type="text" placeholder="username" ng-model="newUser.username" required/>
+    <input type="password" ng-model="newUser.password" required/>
+    <input type="password" ng-model="newUser.email" required/>
+    <input type="submit" value="Create Account"/>
+</form>

@@ -11,10 +11,8 @@
 <ul class="menu">
     <li><a href="#/add">add</a></li>
     <li><a href="#/search">search</a></li>
-    <li ng-hide="isLoggedin"><a href="#" ng-click="login()">Login</a></li>
+    <li ng-hide="isLoggedin"><a href="#/login">Login</a></li>
     <li ng-show="isLoggedin"><a href="#" ng-click="logout()">Logout</a></li>
-    {{currentUser|json}}
-    {{errorMsg}}
 </ul>
 <div ng-view></div>
 
@@ -35,31 +33,9 @@
 <script src="js/controllers/AddItemCtrl.js"></script>
 <script src="js/controllers/JournalCtrl.js"></script>
 <script src="js/controllers/SummaryCtrl.js"></script>
+<script src="js/controllers/LoginCtrl.js"></script>
 <script src="lib/parse-1.2.17.js"></script>
 <script type="text/javascript">
-
-
-    window.fbAsyncInit = function () {
-        Parse.FacebookUtils.init({
-            appId: '606982002728460', // Facebook App ID
-            channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
-            cookie: true, // enable cookies to allow Parse to access the session
-            xfbml: true  // parse XFBML
-        });
-    };
-
-    // Load the SDK asynchronously
-    (function (d) {
-        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement('script');
-        js.id = id;
-        js.async = true;
-        js.src = "//connect.facebook.net/en_US/all.js";
-        ref.parentNode.insertBefore(js, ref);
-    }(document));
 
     Parse.initialize("OxXlG88dNvP7nr2RIBvHthzyMPIywbNI364wrfk4", "wKGAEdLbok1tYAJupkcwcOgiVP75DL5sTpHAVUOG");
 
